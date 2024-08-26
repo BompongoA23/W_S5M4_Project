@@ -9,7 +9,7 @@ const config = {
   // automock: false,
 
   // Stop running tests after `n` failures
-  // bail: 1,
+  // bail: 0,
 
   // The directory where Jest should store its cached dependency information
   // cacheDirectory: "/private/var/folders/96/mtz831_d14j85kmn9jcn1mc40000gn/T/jest_dx",
@@ -153,6 +153,25 @@ const config = {
   testEnvironmentOptions: {
     resources: 'usable',
     runScripts: 'dangerously',
+    html: `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sprint 5 Challenge Submission</title>
+  <style>
+    .card h4.closed~ul {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- body contents injected beforEach test -->
+</body>
+
+</html>
+`
   },
 
   // Adds a location field to test results
